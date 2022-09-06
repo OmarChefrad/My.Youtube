@@ -16,11 +16,8 @@ export const logo =
   "https://cdn.discordapp.com/attachments/895794358945714199/1016289083946975242/play.png"
 
 export const categories = [
-  { name: "New", icon: <HomeIcon /> },
-  { name: "JS Mastery", icon: <CodeIcon /> },
+  { name: "Home", icon: <HomeIcon /> },
   { name: "Coding", icon: <CodeIcon /> },
-  { name: "ReactJS", icon: <CodeIcon /> },
-  { name: "NextJS", icon: <CodeIcon /> },
   { name: "Music", icon: <MusicNoteIcon /> },
   { name: "Education", icon: <SchoolIcon /> },
   { name: "Podcast", icon: <GraphicEqIcon /> },

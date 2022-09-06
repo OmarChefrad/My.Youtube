@@ -1,0 +1,20 @@
+.logo {
+  color: white;
+  font-size: 1.75rem;
+  text-shadow: 4px 4px #ffc6cf;
+  padding-left: 0.5rem;
+  font-weight: bold;
+}
+.MA {
+  color: white;
+  font-size: 1rem;
+  text-shadow: 4px 4px #ffc6cf;
+  margin-bottom: 1rem;
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 600px) {
+  .logo {
+    display: none;
+  }
+}

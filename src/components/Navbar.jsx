@@ -1,7 +1,7 @@
 import React from "react"
 import { Stack } from "@mui/material"
 import { Link } from "react-router-dom"
-
+import "./Navbar.css"
 import { logo } from "../utils/constants"
 import SearchBar from "../components/SearchBar"
 
@@ -32,6 +32,8 @@ const Navbar = () => (
           borderRadius: "0.9rem",
         }}
       />
+      <p className="logo">My.YouTube</p>
+      <p className="MA">MA</p>
     </Link>
     <SearchBar />
   </Stack>

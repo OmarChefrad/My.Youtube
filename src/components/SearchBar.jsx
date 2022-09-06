@@ -11,14 +11,14 @@ const SearchBar = () => {
       sx={{
         borderRadius: 25,
         border: "3px solid #FFFFFF",
-        pl: 3,
+        pl: 2,
         pr: 1,
         boxShadow: "none",
         mr: { sm: 2 },
       }}
       style={{
         boxShadow:
-          "rgba(255, 105, 180, 0.35) 0px 8px 10px -2px, rgba(255, 205, 180, 0.25) 0px 0px 0px 1px",
+          "rgba(255, 105, 180, 0.3.5) 0px 8px 10px -2px, rgba(255, 205, 180, 0.3) 0px 0px 0px 1px",
       }}
     >
       <input
@@ -27,10 +27,11 @@ const SearchBar = () => {
         value=""
         onChange={() => {}}
         style={{
-          paddingRight: "15rem",
+          paddingRight: "1rem",
           outlineColor: "transparent",
         }}
       />
+
       <IconButton type="submit" sx={{ p: "10px", color: "#fd4885" }}>
         <SearchRoundedIcon />
       </IconButton>
