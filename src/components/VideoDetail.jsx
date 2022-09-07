@@ -7,6 +7,7 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle"
 import Videos from "../components/Videos"
 import Loader from "./Loader.jsx"
 import fetchFromAPI from "../utils/fetchFromApi"
+import "./style.css"
 
 const VideoDetail = () => {
   const [videoDetail, setVideoDetail] = useState(null)
@@ -31,7 +32,7 @@ const VideoDetail = () => {
   } = videoDetail
 
   return (
-    <Box minHeight="95vh">
+    <Box minHeight="88vh">
       <Stack direction={{ xs: "column", md: "row" }}>
         <Box flex={1}>
           <Box sx={{ width: "100%", position: "sticky", top: "86px" }}>
@@ -40,45 +41,28 @@ const VideoDetail = () => {
               className="react-player"
               controls
             />
-            <Typography color="#fff" variant="h5" fontWeight="bold" p={2}>
+            <Typography
+              color="#ffacb9"
+              variant="h5"
+              fontWeight="bold"
+              pt={2}
+              pl={2}
+              style={{ textShadow: "2px 1px #fd4885" }}
+            >
               {title}
             </Typography>
             <Stack
               direction="row"
               justifyContent="space-between"
-              sx={{ color: "#fff" }}
-              py={1}
+              sx={{ color: "#ffc6cf" }}
+              style={{ textShadow: "1px 1px #fd4885" }}
               px={2}
             >
-              <Link to={`/channel/${channelId}`}>
-                <Typography
-                  variant={{ sm: "subtitle1", md: "h6" }}
-                  color="#fff"
-                >
-                  {channelTitle}
-                  <CheckCircleIcon
-                    sx={{ fontSize: "12px", color: "gray", ml: "5px" }}
-                  />
-                </Typography>
-              </Link>
-              <Stack direction="row" gap="20px" alignItems="center">
-                <Typography variant="body1" sx={{ opacity: 0.7 }}>
-                  {parseInt(viewCount).toLocaleString()} views
-                </Typography>
-                <Typography variant="body1" sx={{ opacity: 0.7 }}>
-                  {parseInt(likeCount).toLocaleString()} likes
-                </Typography>
-              </Stack>
+              <Typography variant="h6" fontWeight="bold">
+                {viewCount} views
+              </Typography>
             </Stack>
           </Box>
-        </Box>
-        <Box
-          px={2}
-          py={{ md: 1, xs: 5 }}
-          justifyContent="center"
-          alignItems="center"
-        >
-          <Videos videos={videos} direction="column" />
         </Box>
       </Stack>
     </Box>
