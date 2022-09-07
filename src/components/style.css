@@ -16,6 +16,22 @@ a {
   font-weight: bold;
 }
 
+.video-card-contents {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.title {
+  color: white;
+  font-size: 1.25rem;
+  text-shadow: 2px 3px #fca2af;
+  margin-bottom: 1rem;
+  font-weight: bold;
+  overflow: hidden;
+}
+
 @media only screen and (max-width: 600px) {
   .logo {
     display: none;
@@ -68,12 +84,19 @@ a {
   background-color: #fd4885;
 }
 
-@media screen and (max-width: 900px) {
+.videos {
+  padding-left: 3rem;
+}
+
+@media screen and (max-width: 700px) {
   .category-btn {
     margin: 10px;
   }
   .MA {
     margin-left: 0.5rem;
+  }
+  .videos {
+    padding-left: 0;
   }
 }
 

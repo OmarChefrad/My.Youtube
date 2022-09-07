@@ -5,10 +5,20 @@ import SearchRoundedIcon from "@mui/icons-material/SearchRounded"
 import "./style.css"
 
 const SearchBar = () => {
+  const [searchTerm, setSearchTerm] = useState("")
+  const navigate = useNavigate()
+
+  const handleSubmit = (e) => {
+    e.preventDefault()
+    if (searchTerm) {
+      navigate(`/search/${searchTerm}`)
+      setSearchTerm("")
+    }
+  }
   return (
     <Paper
       component="form"
-      onSubmit={() => {}}
+      onSubmit={handleSubmit}
       sx={{
         borderRadius: 25,
         border: "3px solid #FFFFFF",
@@ -25,11 +35,13 @@ const SearchBar = () => {
       <input
         className="search-bar"
         placeholder="Search..."
-        value=""
-        onChange={() => {}}
+        value={searchTerm}
+        onChange={(e) => {
+          setSearchTerm(e.target.value)
+        }}
         style={{
           outlineColor: "transparent",
-          color: "pink",
+          color: "#fd4885",
         }}
       />
 

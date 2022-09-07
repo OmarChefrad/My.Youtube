@@ -2,9 +2,9 @@ import React from "react"
 import { useState, useEffect } from "react"
 import { Box, Stack, Typography } from "@mui/material"
 import SideBar from "../components/SideBar"
-import Vidoes from "../components/Videos"
+import Videos from "../components/Videos"
 
-import { fetchFromAPI } from "../utils/fetchFromApi"
+import fetchFromAPI from "../utils/fetchFromApi"
 
 const Feed = () => {
   const [selectedCategory, setSelectedCategory] = useState("New")
@@ -22,7 +22,9 @@ const Feed = () => {
         sx={{
           height: { sx: "auto", md: "88vh" },
           borderRight: "1px solid #F89880",
-          px: { sx: 0, md: 4 },
+          px: { sx: 0, md: 2 },
+
+          borderBottom: "0.2px solid #fd4885",
         }}
       >
         <SideBar
@@ -49,7 +51,7 @@ const Feed = () => {
         >
           {selectedCategory} <span style={{ color: "#fd4885" }}>videos</span>
         </Typography>
-        <Vidoes videos={videos} />
+        <Videos videos={videos} />
       </Box>
     </Stack>
   )

@@ -9,7 +9,7 @@ const SideBar = ({ selectedCategory, setSelectedCategory }) => (
     className="sideBar-scroll"
     direction="row"
     sx={{
-      overflowY: "scroll",
+      overflowY: "auto",
       height: { sx: "auto", md: "95%" },
       flexDirection: { md: "column" },
       py: { sx: 0, md: 2 },
@@ -25,9 +25,6 @@ const SideBar = ({ selectedCategory, setSelectedCategory }) => (
           padding: "0.5rem 1rem",
           borderRadius: "7px",
           marginBottom: "1rem",
-          display: "flex",
-          flexDirection: "row",
-          alignItems: "center",
         }}
         key={category.name}
       >
