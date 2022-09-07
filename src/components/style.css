@@ -18,3 +18,11 @@
     display: none;
   }
 }
+
+.search-bar::placeholder {
+  color: palevioletred;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

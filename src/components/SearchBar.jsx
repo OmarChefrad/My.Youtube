@@ -2,6 +2,7 @@ import React, { useState } from "react"
 import { useNavigate } from "react-router-dom"
 import { Paper, IconButton } from "@mui/material"
 import SearchRoundedIcon from "@mui/icons-material/SearchRounded"
+import "./style.css"
 
 const SearchBar = () => {
   return (
@@ -29,6 +30,7 @@ const SearchBar = () => {
         style={{
           paddingRight: "1rem",
           outlineColor: "transparent",
+          color: "pink",
         }}
       />
 
