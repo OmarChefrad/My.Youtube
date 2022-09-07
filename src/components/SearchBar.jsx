@@ -28,13 +28,13 @@ const SearchBar = () => {
         value=""
         onChange={() => {}}
         style={{
-          paddingRight: "1rem",
           outlineColor: "transparent",
           color: "pink",
         }}
       />
 
       <IconButton type="submit" sx={{ p: "10px", color: "#fd4885" }}>
+        <div className="search-line"></div>
         <SearchRoundedIcon />
       </IconButton>
     </Paper>

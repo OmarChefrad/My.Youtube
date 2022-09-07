@@ -5,6 +5,9 @@
   padding-left: 0.5rem;
   font-weight: bold;
 }
+a {
+  text-decoration: none;
+}
 .MA {
   color: white;
   font-size: 1rem;
@@ -25,4 +28,74 @@
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+.category-btn:hover {
+  background-color: #fe7389 !important;
+  color: white !important;
+}
+
+.category-btn:hover span {
+  color: white !important;
+}
+
+.category-btn {
+  font-weight: bold !important;
+  text-transform: capitalize;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  cursor: pointer;
+  background: transparent;
+  outline: none;
+  border: none;
+
+  padding: 7px 15px;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.search-bar {
+  width: 180px;
+}
+
+.search-line {
+  flex-direction: column;
+  width: 1px;
+  height: 1.75rem;
+  margin-right: 1rem;
+
+  background-color: #fd4885;
+}
+
+@media screen and (max-width: 900px) {
+  .category-btn {
+    margin: 10px;
+  }
+  .MA {
+    margin-left: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .search-bar {
+    width: 150px;
+  }
+}
+@media screen and (min-width: 900px) {
+  .search-bar {
+    width: 450px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .copyright {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .scroll-horizontal {
+    overflow: auto !important;
+  }
 }
