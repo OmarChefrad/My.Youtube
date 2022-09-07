@@ -19,7 +19,7 @@ const SearchBar = () => {
       }}
       style={{
         boxShadow:
-          "rgba(255, 105, 180, 0.3.5) 0px 8px 10px -2px, rgba(255, 205, 180, 0.3) 0px 0px 0px 1px",
+          "rgba(255, 105, 180, 0.35) 0px 3px 15px, rgba(255, 20, 147, 0.19) 0px 3px 3px",
       }}
     >
       <input

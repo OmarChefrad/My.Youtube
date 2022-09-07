@@ -7,7 +7,6 @@ module.exports = {
         "baby-pink": "#ffc6cf",
         "baby-orange": "#ff9c8c",
         "teen-pink": "#fd4885",
-        "white-pink": "#ffecef",
       },
     },
   },

@@ -12,7 +12,7 @@ const Navbar = () => (
     p={2}
     sx={{
       position: "sticky",
-      background: "#ffecef",
+      background: "linear-gradient(190deg,#ffc6cf,#ffedf0) ",
       top: 0,
       justifyContent: "space-between",
     }}
@@ -28,7 +28,7 @@ const Navbar = () => (
         width={60}
         style={{
           boxShadow:
-            "rgba(255, 105, 180, 0.35) 0px 6px 20px, rgba(255, 20, 147, 0.19) 0px 3px 3px",
+            "rgba(255, 105, 180, 0.35) 0px 10px 15px, rgba(255, 20, 147, 0.19) 0px 5px 5px",
           borderRadius: "0.9rem",
         }}
       />
