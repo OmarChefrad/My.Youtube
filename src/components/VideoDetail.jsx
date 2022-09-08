@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react"
-import { Link, useParams } from "react-router-dom"
+import { useParams } from "react-router-dom"
 import ReactPlayer from "react-player"
 import { Typography, Box, Stack } from "@mui/material"
 import CheckCircleIcon from "@mui/icons-material/CheckCircle"
@@ -7,6 +7,8 @@ import CheckCircleIcon from "@mui/icons-material/CheckCircle"
 import Videos from "../components/Videos"
 import Loader from "./Loader.jsx"
 import fetchFromAPI from "../utils/fetchFromApi"
+import ThumbUpIcon from "@mui/icons-material/ThumbUp"
+import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye"
 import "./style.css"
 
 const VideoDetail = () => {
@@ -27,7 +29,7 @@ const VideoDetail = () => {
   if (!videoDetail?.snippet) return <Loader />
 
   const {
-    snippet: { title, channelId, channelTitle },
+    snippet: { title, channelTitle },
     statistics: { viewCount, likeCount },
   } = videoDetail
 
@@ -54,15 +56,49 @@ const VideoDetail = () => {
             <Stack
               direction="row"
               justifyContent="space-between"
-              sx={{ color: "#ffc6cf" }}
+              sx={{ color: "#ffc6cf", opacity: 0.7 }}
+              style={{ textShadow: "1px 1px #fd4885" }}
+              px={2}
+              py={1}
+            >
+              <Typography variant={{ sm: "subtitle1", md: "h6" }}>
+                {channelTitle}
+
+                <CheckCircleIcon sx={{ fontSize: "16px", ml: "5px" }} />
+              </Typography>
+            </Stack>
+            <Stack
+              direction="row"
+              justifyContent="space-between"
+              sx={{ color: "#ffc6cf", opacity: 0.7 }}
               style={{ textShadow: "1px 1px #fd4885" }}
               px={2}
             >
               <Typography variant="h6" fontWeight="bold">
-                {viewCount} views
+                <RemoveRedEyeIcon
+                  style={{ color: "#fd4885", marginRight: "0.5rem" }}
+                />
+                {parseInt(viewCount).toLocaleString()} views
+              </Typography>
+              <Typography
+                variant="h6"
+                fontWeight="bold"
+                style={{ marginBottom: "2rem" }}
+              >
+                <ThumbUpIcon
+                  style={{ color: "#fd4885", marginRight: "0.5rem" }}
+                />
+                {parseInt(likeCount).toLocaleString()} likes
               </Typography>
             </Stack>
           </Box>
+        </Box>
+        <Box py={{ md: 1, xs: 5 }} justifyContent="center" alignItems="center">
+          <Videos
+            videos={videos}
+            direction="column"
+            style={{ paddingLeft: "0" }}
+          />
         </Box>
       </Stack>
     </Box>
