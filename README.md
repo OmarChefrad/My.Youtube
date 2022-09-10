@@ -8,7 +8,7 @@
 </h1>
 
 
-![screenshot](https://cdn.discordapp.com/attachments/895794358945714199/1018197392404787260/chillhop_iphoneseblack_portrait.png)
+![screenshot](https://cdn.discordapp.com/attachments/895794358945714199/1018207747533193296/chillhop_iphoneseblack_portrait2.png)
 
 ![screenshot](https://cdn.discordapp.com/attachments/895794358945714199/1018197392073445578/homeY_dell-xps13-front.png)
 
