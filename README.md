@@ -1,6 +1,6 @@
-<h1 align="center" style="color: black; font-size: 25px;">
+<h1 align="center" style="font-size: 27.5px;">
   <br>
-  <a href="http://www.amitmerchant.com/electron-markdownify"><img src="https://cdn.discordapp.com/attachments/895794358945714199/1016289083946975242/play.png" alt="My.YouTube" width="140">
+  <a href="https://omarchefrad.github.io/My.Youtube/"><img src="https://cdn.discordapp.com/attachments/895794358945714199/1016289083946975242/play.png" alt="My.YouTube" width="140">
   <br>
     My.Youtube
   </br>
