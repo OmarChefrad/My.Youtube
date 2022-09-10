@@ -85,7 +85,7 @@ a {
 }
 
 .videos {
-  padding-left: 3rem;
+  padding-left: 5rem;
   margin-right: 2rem;
 }
 
@@ -130,7 +130,7 @@ a {
 }
 
 .react-player {
-  height: 77vh !important;
+  height: 74vh !important;
   width: 100% !important;
   padding-left: 1rem;
   padding-top: 0.5rem;
