@@ -132,6 +132,6 @@ a {
 .react-player {
   height: 77vh !important;
   width: 100% !important;
-  padding-left: 1rem !important;
-  padding-top: 0.5rem !important;
+  padding-left: 1rem;
+  padding-top: 0.5rem;
 }
